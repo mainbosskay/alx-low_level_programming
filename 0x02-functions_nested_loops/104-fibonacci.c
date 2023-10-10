@@ -19,7 +19,7 @@ int main(void)
 		if (boo1)
 		{
 			j1 = t1 + t2;
-			printf(",%ld", j1);
+			printf(", %ld", j1);
 			t1 = t2;
 			t2 = j1;
 		}
@@ -35,8 +35,8 @@ int main(void)
 			}
 			j2 = (d1 + d2);
 			j1 = t1 + t2 + (j2 / 1000000000);
-			printf(",%ld", j1);
-			printf(",%ld", j2 % 1000000000);
+			printf(", %ld", j1);
+			printf("%ld", j2 % 1000000000);
 			t1 = t2;
 			d1 = d2;
 			t2 = j1;
