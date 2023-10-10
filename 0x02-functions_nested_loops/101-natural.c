@@ -13,7 +13,7 @@ int main(void)
 	for (t = 0 ; t < 1024 ; t++)
 	{
 		if (t % 3 == 0 || t % 5 == 0)
-			k = k + 1;
+			k = k + t;
 	}
 	printf("%d\n", k);
 	return (0);
