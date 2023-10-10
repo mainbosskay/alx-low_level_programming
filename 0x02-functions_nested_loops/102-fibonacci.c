@@ -13,7 +13,7 @@ int main(void)
 	int d;
 
 	printf("%lu, ", fibok);
-	for (d = 1 ; d <= 50 ; d++)
+	for (d = 1 ; d < 50 ; d++)
 	{
 		printf("%lu", fibot);
 		fiboj = fibok + fibot;
