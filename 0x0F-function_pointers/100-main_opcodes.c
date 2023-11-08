@@ -1,8 +1,8 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Printing the opcodes of its main function
+ * main - Printing the opcodes of its own
  * @argc: argument count
  * @argv: argument vector
  * Return: it is 0
