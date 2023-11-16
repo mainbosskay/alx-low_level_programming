@@ -1,16 +1,16 @@
 #include "lists.h"
 
 /**
- * print_list - Printing all elements of list_t list
+ * print_list - Printing all the elements of list_t
  * @h: linked list
- * Return: either the length of the list or zero
+ * Return: nodes
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t numnodes;
+	size_t numnode;
 
-	numnodes = 0;
+	numnode = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -18,7 +18,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		numnodes++;
+		numnode++;
 	}
-	return (numnodes);
+	return (numnode);
 }
