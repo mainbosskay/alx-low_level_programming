@@ -1,15 +1,16 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a list
+ * print_list - Printing all the elements of a list
  * @h: singly linked list
  * Return: number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
-	size_t numnod;
+	size_t numnode;
 
-	numnod = 0;
+	numnode = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -17,7 +18,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		numnod++;
+		numnode++;
 	}
-	return (numnod);
+	return (numnode);
 }
