@@ -1,4 +1,4 @@
-# Makefile with school as executable name with rules all, clean, oclean, fclean and re
+# Makefile that has school as executable name where rules are all, clean, oclean, fclean and re
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
@@ -6,7 +6,7 @@ NAME = school
 RM = rm -f
 
 all: $(OBJ)
-	$(CC) $(OBJ) -O $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
 oclean:
