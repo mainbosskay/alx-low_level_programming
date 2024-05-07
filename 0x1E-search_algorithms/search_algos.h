@@ -21,7 +21,6 @@ int advanced_binary(int *array, size_t size, int value);
  *
  * Description: singly linked list node structure
  */
-
 typedef struct listint_s
 {
 	int n;
@@ -44,7 +43,6 @@ void print_list(const listint_t *list);
  *
  * Description: singly linked list node structure with an express lane
  */
-
 typedef struct skiplist_s
 {
 	int n;
